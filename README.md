@@ -31,7 +31,9 @@ Defined the CHR’s IP address and credentials within the Ansible hosts file.
 ### Playbook Development: 
 Authored RADIUS.yml to automate the RADIUS client setup.
 ### Target Parameters: 
-Server 35.227.71.209, Secret testing123, and Service hotspot.
+- Server 35.227.71.209
+- Secret testing123
+- Service hotspot.
 ### Deployment: 
 Executed ansible-playbook RADIUS.yml and confirmed the task status returned "changed".
 
