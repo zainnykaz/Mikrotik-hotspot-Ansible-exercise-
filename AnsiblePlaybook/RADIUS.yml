@@ -1,0 +1,16 @@
+---
+- hosts: mikrotik
+  connection: network_cli
+  gather_facts: no 
+
+  vars:
+    ansible_network_os: routeros
+    ansible_user: admin
+    ansible_password: admin
+
+  tasks:
+  
+   - name: Add Radius Client 
+     routeros_command:
+       commands: /radius add address=35.227.71.209 secret=testing123 service=hotspot
+         
